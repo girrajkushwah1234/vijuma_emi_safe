@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Login Form -->
+    <section id="login-main">
+        <div class="container">
+            <div class="row">
+                <div class="vender">
+                    <form action="" class="form">
+                        <h3>Vender</h3>
+                        <div class="name">
+                            <div class="userican"><span><i class="fa fa-user-o" aria-hidden="true"></i></span> </div>
+                            <input type="text" placeholder=" User name">
+                        </div>
+                        <div class="name">
+                            <div class="userican"><span><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                </span> </div>
+                            <input type="text" placeholder="Password">
+                        </div>
+                        <button type="button" class="submit">Log IN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Form End-->
+
+
+
+    <!-- Vender Account Start -->
+    <section id="vender-deshboard">
+        <div class="account-main">
+            <div class="account-list">
+                <h3>Coustomer Account</h3>
+                <ul class="tab-list">
+                    <li><a href="#tab1">New Create Customer ID</a></li>
+                    <li><a href="#tab2">All Customer ID list</a></li>
+                    <li><a href="#tab3">My Account Details</a></li>
+                </ul>
+            </div>
+            <div class="tab-main-information">
+                <div class="tab-information" id="tab1">
+
+
+                    <form id="multiStepForm" onsubmit="return validateForm()">
+                        <div id="step1">
+                            <div class="customear-account">
+                                <div class="create-customers">
+                                    <div class="customer-tittle">
+                                        <h3> Create Customear Account
+                                        </h3>
+                                    </div>
+                                    <table class="table-main">
+                                        <tr class="model">
+                                            <th class="name-list"> Customer Name</th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr class="model">
+                                            <th class="name-list">Father's Name-
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr class="model">
+                                            <th class="name-list">Mother's Name
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr class="model">
+                                            <th class="name-list">Wife Name- </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list">House- </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list">Post- </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list">Lendmark-
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Ward No.-
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list">Mob.-
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+
+
+                                    </table>
+                                </div>
+                                <div class="create-customers">
+                                    <div class="customer-tittle">
+                                        <h3 style="text-align: right;"> Step 1
+                                        </h3>
+                                    </div>
+                                    <table class="table-main">
+                                        <tr>
+                                            <th class="name-list"> Model No.
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> IEMI No.
+
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Account No.
+
+                                            </th>
+                                            <th> <input type="text"></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Aadhar Card
+                                            </th>
+                                            <th> <span class="card"> Attached Aadhar</span><span class="size"> Size 40
+                                                    KB</span></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Pan Card
+                                            </th>
+                                            <th> <span class="card"> Attached Pan Card
+                                                </span><span class="size"> Size 40 KB</span></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Live Photo
+                                            </th>
+                                            <th> <span class="card"> Attached Photo
+                                                </span><span class="size"> Size 40 KB</span></th>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="name-list"> Digital Signature
+
+                                            </th>
+                                            <th> <span class="card"> Attached Signature
+                                                </span><span class="size"> Size 40 KB</span></th>
+
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="nextStep()" class="click-here">Next</button>
+
+                        </div>
+
+                        <div id="step2" style="display: none;">
+                            <h3 >Step 2</h3>
+                            <div class="mobile-payment amount-2">
+                                <div class="payment">
+                                    <h3>Mobile Paymet Details
+                                    </h3>
+                                    <table class="emi-deta">
+                                        <tr>
+                                            <th> Purchage Date*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> Down Payment*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Amount*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Date
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Time* <span class="before"> (Before 4.30 PM)
+                                                </span>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="purchage">
+                                    <h3>EMI Details</h3>
+                                    <table class="emi-deta">
+                                        <tr>
+                                            <th> Purchage Date*
+                                            </th>
+                                            <th> <input type="text" placeholder=" Deposit Amounts
+                                                "></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                           <div class="customear-info">
+                            ijwdijwidjwi0j
+                           </div>
+                           
+                            <button type="button" onclick="prevStep()">Previous</button>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="tab-information" id="tab2">
+
+                    <div class="lendmark">
+                        <div class="customear-account account-details">
+                            <div class="list">
+                                <h3> No. of Customears List </h3>
+                            </div>
+                            <div class="table-contant-data">
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-data">
+                                    <div class="suraj">
+                                        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="deatil-main">
+                                        <div class="username">
+                                            <h4> Suraj Pratap <span>(Jan 4, 2024) </span>
+                                            </h4>
+                                        </div>
+                                        <div class="deta-btn">
+                                            <button>Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="amount">
+                            <table class="table-main amounts">
+                                <tr>
+                                    <th class="name-list"> Customer Name</th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Father's Name-
+                                    </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Mother's Name
+                                    </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Wife Name- </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">House- </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Post- </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Lendmark-
+                                    </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list"> Ward No.-
+                                    </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                                <tr>
+                                    <th class="name-list">Mob.-
+                                    </th>
+                                    <th> <input type="text"></th>
+
+                                </tr>
+                            </table>
+
+                            <div class="mobile-payment">
+                              <div class="main-data">
+                                <div class="payment">
+                                    <h3>Mobile Paymet Details
+                                    </h3>
+                                    <table class="emi-deta">
+                                        <tr>
+                                            <th> Purchage Date*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> Down Payment*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Amount*
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Date
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th> EMI Time* <span class="before"> (Before 4.30 PM)
+                                                </span>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="purchage">
+                                    <h3>EMI Details</h3>
+                                    <table class="emi-deta">
+                                        <tr>
+                                            <th> Purchage Date*
+                                            </th>
+                                            <th> <input type="text" placeholder=" Deposit Amounts
+                                                "></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th> <input type="text"></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-information shopname" id="tab3">
+                    <div class="location">
+                        <div class="my-account">
+                            <table class="table-main shop">
+                                <tr>
+                                    <th>
+                                        Name
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        User ID
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Shop Name
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Location
+
+                                    </th>
+                                </tr>
+                            </table>
+                            <table class="table-main shop">
+                                <tr>
+                                    <th class="filter">
+                                        Deepak Kumar
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="filter">
+                                        deepak_Mob009
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="filter">
+                                        Deepak Mobile
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="filter">
+                                        Delhi
+
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="images">
+                            <img src="images/boy1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('.tab-list li:first-child').addClass('some');
+            $('.tab-main-information .tab-information').hide();
+            $('.tab-main-information .tab-information:first-child').show();
+
+            $('.tab-list li').click(function () {
+                $('.tab-list li').removeClass('some');
+                $(this).addClass('some');
+                $('.tab-main-information .tab-information').hide();
+
+                var Tabdata = $(this).find('a').attr('href');
+                $(Tabdata).show();
+                return false;
+            });
+
+            $('.submit').click(function () {
+                $('#vender-deshboard').addClass('show');
+                $('#login-main').addClass('hide');
+            })
+        });
+
+    </script>
+
+
+
+    <script>
+        var currentStep = 1;
+
+        function nextStep() {
+            document.getElementById("step" + currentStep).style.display = "none";
+            currentStep++;
+            document.getElementById("step" + currentStep).style.display = "block";
+        }
+
+        function prevStep() {
+            document.getElementById("step" + currentStep).style.display = "none";
+            currentStep--;
+            document.getElementById("step" + currentStep).style.display = "block";
+        }
+
+        function validateForm() {
+            var isValid = true;
+
+            if (currentStep === 1) {
+                var fullname = document.getElementById("fullname").value;
+                var email = document.getElementById("email").value;
+                var fullnameError = document.getElementById("fullnameError");
+                var emailError = document.getElementById("emailError");
+
+                if (fullname === "") {
+                    fullnameError.textContent = "Full Name is required";
+                    isValid = false;
+                } else {
+                    fullnameError.textContent = "";
+                }
+
+                if (email === "") {
+                    emailError.textContent = "Email is required";
+                    isValid = false;
+                } else {
+                    emailError.textContent = "";
+                }
+            } else if (currentStep === 2) {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var usernameError = document.getElementById("usernameError");
+                var passwordError = document.getElementById("passwordError");
+
+                if (username === "") {
+                    usernameError.textContent = "Username is required";
+                    isValid = false;
+                } else {
+                    usernameError.textContent = "";
+                }
+
+                if (password === "") {
+                    passwordError.textContent = "Password is required";
+                    isValid = false;
+                } else {
+                    passwordError.textContent = "";
+                }
+            }
+
+            return isValid;
+        }
+    </script>
+
+</body>
+
+</html>
